@@ -53,7 +53,7 @@ Copy the following config into your `.pre-commit-config.yaml` file:
 - repo: https://github.com/prettier/prettier
   rev: "" # Use the sha or tag you want to point at
   hooks:
-    - id: prettier
+  - id: prettier
 ```
 
 Find more info from [here](https://pre-commit.com).
