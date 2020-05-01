@@ -1403,7 +1403,7 @@ Copy the following config into your \`.pre-commit-config.yaml\` file:
 - repo: https://github.com/prettier/prettier
   sha: '' # Use the sha or tag you want to point at
   hooks:
-    - id: prettier
+  - id: prettier
 \`\`\`
 
 Find more info from [here](https://pre-commit.com).
@@ -1809,9 +1809,9 @@ YAML:
 \`\`\`yaml
 semi: false
 overrides:
-  - files: '*.test.js'
-    options:
-      semi: true
+- files: '*.test.js'
+  options:
+    semi: true
 \`\`\`
 
 \`files\` is required for each override, and may be a string or array of strings.
@@ -3382,7 +3382,7 @@ Copy the following config into your \`.pre-commit-config.yaml\` file:
 - repo: https://github.com/prettier/prettier
   sha: "" # Use the sha or tag you want to point at
   hooks:
-    - id: prettier
+  - id: prettier
 \`\`\`
 
 Find more info from [here](https://pre-commit.com).
@@ -3788,9 +3788,9 @@ YAML:
 \`\`\`yaml
 semi: false
 overrides:
-  - files: "*.test.js"
-    options:
-      semi: true
+- files: "*.test.js"
+  options:
+    semi: true
 \`\`\`
 
 \`files\` is required for each override, and may be a string or array of strings.
