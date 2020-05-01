@@ -248,14 +248,14 @@ proseWrap: "always"
 ---
 seq:
  &anchor
-- a
-- b
+  - a
+  - b
 
 =====================================output=====================================
 ---
 seq: &anchor
-  - a
-  - b
+- a
+- b
 
 ================================================================================
 `;
@@ -270,14 +270,14 @@ useTabs: true
 ---
 seq:
  &anchor
-- a
-- b
+  - a
+  - b
 
 =====================================output=====================================
 ---
 seq: &anchor
-  - a
-  - b
+- a
+- b
 
 ================================================================================
 `;
@@ -881,8 +881,8 @@ key:
 
 =====================================output=====================================
 key:
-  - item1
-  - item2
+- item1
+- item2
 
 ================================================================================
 `;
@@ -900,8 +900,8 @@ key:
 
 =====================================output=====================================
 key:
-  - item1
-  - item2
+- item1
+- item2
 
 ================================================================================
 `;
@@ -2671,9 +2671,9 @@ bar:
 
 =====================================output=====================================
 foo:
-  - 42
+- 42
 bar:
-  - 44
+- 44
 
 ================================================================================
 `;
@@ -2692,9 +2692,9 @@ bar:
 
 =====================================output=====================================
 foo:
-  - 42
+- 42
 bar:
-  - 44
+- 44
 
 ================================================================================
 `;
@@ -2707,14 +2707,14 @@ proseWrap: "always"
                                                                                 | printWidth
 =====================================input======================================
 1:
-- 2
-- 3
+  - 2
+  - 3
 4: 5
 
 =====================================output=====================================
 1:
-  - 2
-  - 3
+- 2
+- 3
 4: 5
 
 ================================================================================
@@ -2728,14 +2728,14 @@ useTabs: true
                                                                                 | printWidth
 =====================================input======================================
 1:
-- 2
-- 3
+  - 2
+  - 3
 4: 5
 
 =====================================output=====================================
 1:
-  - 2
-  - 3
+- 2
+- 3
 4: 5
 
 ================================================================================
@@ -2929,13 +2929,13 @@ national:
 
 =====================================output=====================================
 american:
-  - Boston Red Sox
-  - Detroit Tigers
-  - New York Yankees
+- Boston Red Sox
+- Detroit Tigers
+- New York Yankees
 national:
-  - New York Mets
-  - Chicago Cubs
-  - Atlanta Braves
+- New York Mets
+- Chicago Cubs
+- Atlanta Braves
 
 ================================================================================
 `;
@@ -2958,13 +2958,13 @@ national:
 
 =====================================output=====================================
 american:
-  - Boston Red Sox
-  - Detroit Tigers
-  - New York Yankees
+- Boston Red Sox
+- Detroit Tigers
+- New York Yankees
 national:
-  - New York Mets
-  - Chicago Cubs
-  - Atlanta Braves
+- New York Mets
+- Chicago Cubs
+- Atlanta Braves
 
 ================================================================================
 `;
@@ -3248,12 +3248,12 @@ rbi:
 =====================================output=====================================
 ---
 hr: # 1998 hr ranking
-  - Mark McGwire
-  - Sammy Sosa
+- Mark McGwire
+- Sammy Sosa
 rbi:
-  # 1998 rbi ranking
-  - Sammy Sosa
-  - Ken Griffey
+# 1998 rbi ranking
+- Sammy Sosa
+- Ken Griffey
 
 ================================================================================
 `;
@@ -3277,12 +3277,12 @@ rbi:
 =====================================output=====================================
 ---
 hr: # 1998 hr ranking
-  - Mark McGwire
-  - Sammy Sosa
+- Mark McGwire
+- Sammy Sosa
 rbi:
-  # 1998 rbi ranking
-  - Sammy Sosa
-  - Ken Griffey
+# 1998 rbi ranking
+- Sammy Sosa
+- Ken Griffey
 
 ================================================================================
 `;
@@ -3306,12 +3306,12 @@ rbi:
 =====================================output=====================================
 ---
 hr:
-  - Mark McGwire
-  # Following node labeled SS
-  - &SS Sammy Sosa
+- Mark McGwire
+# Following node labeled SS
+- &SS Sammy Sosa
 rbi:
-  - *SS # Subsequent occurrence
-  - Ken Griffey
+- *SS # Subsequent occurrence
+- Ken Griffey
 
 ================================================================================
 `;
@@ -3335,12 +3335,12 @@ rbi:
 =====================================output=====================================
 ---
 hr:
-  - Mark McGwire
-  # Following node labeled SS
-  - &SS Sammy Sosa
+- Mark McGwire
+# Following node labeled SS
+- &SS Sammy Sosa
 rbi:
-  - *SS # Subsequent occurrence
-  - Ken Griffey
+- *SS # Subsequent occurrence
+- Ken Griffey
 
 ================================================================================
 `;
@@ -4049,14 +4049,14 @@ bill-to: &id001
         postal  : 48046
 ship-to: *id001
 product:
-    - sku         : BL394D
-      quantity    : 4
-      description : Basketball
-      price       : 450.00
-    - sku         : BL4438H
-      quantity    : 1
-      description : Super Hoop
-      price       : 2392.00
+- sku         : BL394D
+  quantity    : 4
+  description : Basketball
+  price       : 450.00
+- sku         : BL4438H
+  quantity    : 1
+  description : Super Hoop
+  price       : 2392.00
 tax  : 251.42
 total: 4443.52
 comments:
@@ -4081,14 +4081,14 @@ bill-to: &id001
     postal: 48046
 ship-to: *id001
 product:
-  - sku: BL394D
-    quantity: 4
-    description: Basketball
-    price: 450.00
-  - sku: BL4438H
-    quantity: 1
-    description: Super Hoop
-    price: 2392.00
+- sku: BL394D
+  quantity: 4
+  description: Basketball
+  price: 450.00
+- sku: BL4438H
+  quantity: 1
+  description: Super Hoop
+  price: 2392.00
 tax: 251.42
 total: 4443.52
 comments: Late afternoon is best. Backup contact is Nancy Billsmer @ 338-4338.
@@ -4118,14 +4118,14 @@ bill-to: &id001
         postal  : 48046
 ship-to: *id001
 product:
-    - sku         : BL394D
-      quantity    : 4
-      description : Basketball
-      price       : 450.00
-    - sku         : BL4438H
-      quantity    : 1
-      description : Super Hoop
-      price       : 2392.00
+- sku         : BL394D
+  quantity    : 4
+  description : Basketball
+  price       : 450.00
+- sku         : BL4438H
+  quantity    : 1
+  description : Super Hoop
+  price       : 2392.00
 tax  : 251.42
 total: 4443.52
 comments:
@@ -4150,14 +4150,14 @@ bill-to: &id001
     postal: 48046
 ship-to: *id001
 product:
-  - sku: BL394D
-    quantity: 4
-    description: Basketball
-    price: 450.00
-  - sku: BL4438H
-    quantity: 1
-    description: Super Hoop
-    price: 2392.00
+- sku: BL394D
+  quantity: 4
+  description: Basketball
+  price: 450.00
+- sku: BL4438H
+  quantity: 1
+  description: Super Hoop
+  price: 2392.00
 tax: 251.42
 total: 4443.52
 comments: Late afternoon is best.
@@ -4192,14 +4192,14 @@ User: ed
 Fatal:
   Unknown variable "bar"
 Stack:
-  - file: TopClass.py
-    line: 23
-    code: |
-      x = MoreObject("345\\n")
-  - file: MoreClass.py
-    line: 58
-    code: |-
-      foo = bar
+- file: TopClass.py
+  line: 23
+  code: |
+    x = MoreObject("345\\n")
+- file: MoreClass.py
+  line: 58
+  code: |-
+    foo = bar
 
 =====================================output=====================================
 ---
@@ -4215,14 +4215,14 @@ Date: 2001-11-23 15:03:17 -5
 User: ed
 Fatal: Unknown variable "bar"
 Stack:
-  - file: TopClass.py
-    line: 23
-    code: |
-      x = MoreObject("345\\n")
-  - file: MoreClass.py
-    line: 58
-    code: |-
-      foo = bar
+- file: TopClass.py
+  line: 23
+  code: |
+    x = MoreObject("345\\n")
+- file: MoreClass.py
+  line: 58
+  code: |-
+    foo = bar
 
 ================================================================================
 `;
@@ -4252,14 +4252,14 @@ User: ed
 Fatal:
   Unknown variable "bar"
 Stack:
-  - file: TopClass.py
-    line: 23
-    code: |
-      x = MoreObject("345\\n")
-  - file: MoreClass.py
-    line: 58
-    code: |-
-      foo = bar
+- file: TopClass.py
+  line: 23
+  code: |
+    x = MoreObject("345\\n")
+- file: MoreClass.py
+  line: 58
+  code: |-
+    foo = bar
 
 =====================================output=====================================
 ---
@@ -4277,14 +4277,14 @@ Date: 2001-11-23 15:03:17 -5
 User: ed
 Fatal: Unknown variable "bar"
 Stack:
-  - file: TopClass.py
-    line: 23
-    code: |
-      x = MoreObject("345\\n")
-  - file: MoreClass.py
-    line: 58
-    code: |-
-      foo = bar
+- file: TopClass.py
+  line: 23
+  code: |
+    x = MoreObject("345\\n")
+- file: MoreClass.py
+  line: 58
+  code: |-
+    foo = bar
 
 ================================================================================
 `;
@@ -4297,8 +4297,8 @@ proseWrap: "always"
                                                                                 | printWidth
 =====================================input======================================
 sequence:
-- one
-- two
+  - one
+  - two
 mapping:
   ? sky
   : blue
@@ -4306,8 +4306,8 @@ mapping:
 
 =====================================output=====================================
 sequence:
-  - one
-  - two
+- one
+- two
 mapping:
   sky: blue
   sea: green
@@ -4323,8 +4323,8 @@ useTabs: true
                                                                                 | printWidth
 =====================================input======================================
 sequence:
-- one
-- two
+  - one
+  - two
 mapping:
   ? sky
   : blue
@@ -4332,8 +4332,8 @@ mapping:
 
 =====================================output=====================================
 sequence:
-  - one
-  - two
+- one
+- two
 mapping:
   sky: blue
   sea: green
@@ -4698,9 +4698,9 @@ proseWrap: "always"
 
 =====================================output=====================================
 a:
-  - b
-  - - c
-    - d
+- b
+- - c
+  - d
 
 ================================================================================
 `;
@@ -4719,9 +4719,9 @@ useTabs: true
 
 =====================================output=====================================
 a:
-  - b
-  - - c
-    - d
+- b
+- - c
+  - d
 
 ================================================================================
 `;
@@ -7215,8 +7215,8 @@ block sequence:
 
 =====================================output=====================================
 block sequence:
-  - one
-  - two: three
+- one
+- two: three
 
 ================================================================================
 `;
@@ -7234,8 +7234,8 @@ block sequence:
 
 =====================================output=====================================
 block sequence:
-  - one
-  - two: three
+- one
+- two: three
 
 ================================================================================
 `;
@@ -7386,7 +7386,7 @@ plain key: in-line value
 plain key: in-line value
 : # Both empty
 "quoted key":
-  - entry
+- entry
 
 ================================================================================
 `;
@@ -7407,7 +7407,7 @@ plain key: in-line value
 plain key: in-line value
 : # Both empty
 "quoted key":
-  - entry
+- entry
 
 ================================================================================
 `;
@@ -7560,9 +7560,9 @@ mapping: !!map
 
 =====================================output=====================================
 sequence: !!seq
-  - entry
-  - !!seq
-    - nested
+- entry
+- !!seq
+  - nested
 mapping: !!map
   foo: bar
 
@@ -7585,9 +7585,9 @@ mapping: !!map
 
 =====================================output=====================================
 sequence: !!seq
-  - entry
-  - !!seq
-    - nested
+- entry
+- !!seq
+  - nested
 mapping: !!map
   foo: bar
 
@@ -7927,9 +7927,9 @@ foo: !!seq
 
 =====================================output=====================================
 foo: !!seq
-  - !!str a
-  - !!map
-    key: !!str value
+- !!str a
+- !!map
+  key: !!str value
 
 ================================================================================
 `;
@@ -7948,9 +7948,9 @@ foo: !!seq
 
 =====================================output=====================================
 foo: !!seq
-  - !!str a
-  - !!map
-    key: !!str value
+- !!str a
+- !!map
+  key: !!str value
 
 ================================================================================
 `;
@@ -8446,7 +8446,7 @@ c: #lala
   - #lala
     seq2
 e: &node # lala
-  - x: y
+- x: y
 block: > # lala
   abcde
 
@@ -8490,7 +8490,7 @@ c: #lala
   - #lala
     seq2
 e: &node # lala
-  - x: y
+- x: y
 block: > # lala
   abcde
 
@@ -8512,7 +8512,7 @@ c: d	#X
 =====================================output=====================================
 a: b
 seq:
-  - a
+- a
 c: d #X
 
 ================================================================================
@@ -8533,7 +8533,7 @@ c: d	#X
 =====================================output=====================================
 a: b
 seq:
-  - a
+- a
 c: d #X
 
 ================================================================================

@@ -524,7 +524,7 @@ function _print(node, parentNode, path, options, print) {
   }
 
   function indent(node, doc) {
-    // Do not indent lists
+    // Do not indent sequences
     if (node.value && isNode(node.value.content, ["sequence"])) {
       return doc
     }
