@@ -439,6 +439,7 @@ function _print(node, parentNode, path, options, print) {
               ifBreak(
                 concat([hardline, ": ", align(2, value)]),
                 indent(
+                  node,
                   concat([
                     needsSpaceInFrontOfMappingValue(node) ? " " : "",
                     ":",
@@ -483,6 +484,7 @@ function _print(node, parentNode, path, options, print) {
       return concat([
         openMarker,
         indent(
+          node,
           concat([
             bracketSpacing,
             concat(
@@ -521,7 +523,11 @@ function _print(node, parentNode, path, options, print) {
       throw new Error(`Unexpected node type ${node.type}`);
   }
 
-  function indent(doc) {
+  function indent(node, doc) {
+    // Do not indent lists
+    if (node.value && isNode(node.value.content, ["sequence"])) {
+      return doc
+    }
     return docBuilders.align(" ".repeat(options.tabWidth), doc);
   }
 }
